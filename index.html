@@ -7,112 +7,150 @@
   <meta name="description" content="Lucas Lebielle, web developper">
   <meta name="author" content="SitePoint">
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <script src="js/scripts.js"></script>
 </head>
 <body>
 	<h1>Lucas LEBIELLE</h1>
-	<strong>Technical Lead et développement web.</strong>
-	<p>
-		Utilisation, architecture et développement sur les principaux CMS Drupal, Wordpress, joomla
-		Développement Full stack. Architecture.Web
+	
+	<p class="text-center">
+		<strong>Technical Lead et développement web.</strong><br/>
+		Utilisation, architecture et développement sur les principaux CMS Drupal, Wordpress, joomla<br/>
+		Développement Fullstack. Architecture web.<br/>
 	</p> 
-
-	<ul class="menu">  
-		<li><a href="#presentation">Présentation</a></li>
-		<li><a href="#competences">Compétences</a></li>
-		<li><a href="#experience">Expérience</a></li>
-		<li><a href="#portfolio">Portfolio</a></li>
-	</ul>
-
+<p>
+	
+	
+	</p>
+	<div class="left-menu">
+		<ul class="menu">  
+			<!--li><a href="#presentation">Présentation</a></li-->
+			<li><a href="#competences">Compétences</a></li>
+			<li><a href="#experience">Expérience</a></li>
+			<!--li><a href="#portfolio">Portfolio</a></li-->
+			<li><a href="#contact">Contact</a></li>
+			
+		</ul>
+		<a href="mailto:lucas@lebielle.com">lucas@lebielle.com</a><br/>
+		<a href="tel:0033633817709">&#9742; +33 6 33 81 77 09</a><br/>
+		<a href="tel:00221776367115">&#9742; +221 77 636 71 15</a><br/>
+		<a href="https://www.linkedin.com/in/lucas-lebielle-02735634/" target="_blank">Linkedin</a><br/>
+	</div>
   	<a name="presentation"/>
-	<h2>Présentation</h2>
+	<!--h2>Présentation</h2-->
 	
 	<a name="competences"/>
 	<h2>Compétences</h2>
 <form >
-	<input type="text" onkeyup="filterSkills"/>
-	<span class="skill language frontend level5">Javascript</span>
-	<span class="skill language api frontend level5">JQuery</span>
-	<span class="skill language framework front level2">Angular2</span>
-	<span class="skill language backend level5">PHP</span>
-	<span class="skill language backend level2">.Net</span>
+	
+	<p id="skill-list">
+	
 	<span class="skill cms backend level4">Drupal 7</span>
 	<span class="skill cms backend level3">Drupal 8</span>
-	<span class="skill framework backend level3">Symfony</span>
-	<span class="skill language frontend level5">HTML5</span>
-	<span class="skill language frontend level5">CSS3</span>
-	<span class="skill framework frontend level4">Bootstrap</span>
-	<span class="skill backend level3">SOAP</span>
-	<span class="skill backend level3">REST</span>
-	<span class="skill system level3">Linux</span>
-	<span class="skill system level3">Apache</span>
 	<span class="skill cms backend level4">Wordpress</span>
 	<span class="skill cms backend level3">Joomla</span>
+	<span class="skill language framework front level2">Angular2</span>
+	<span class="skill language api frontend level5">JQuery</span>
+	<span class="skill language backend level5">PHP</span>
+	<span class="skill language backend level2">.Net</span>
+	
+	<span class="skill language frontend level5">HTML5</span>
+	<span class="skill language frontend level5">CSS3</span>
+	<span class="skill language frontend level5">Javascript</span>
+	<span class="skill framework api frontend level4">Bootstrap</span>
+	<span class="skill framework backend level3">Symfony</span>
+	<span class="skill database level4">MySQL</span>
+	<span class="skill database level3">Postgres</span>
+	<span class="skill backend api level3">SOAP</span>
+	<span class="skill backend api level3">REST</span>
+	<span class="skill system level3">Linux</span>
+	<span class="skill system level4">Apache</span>
 	<span class="skill methodology level3">Scrum</span>
+	<span class="skill methodology level2">Prince2</span>
 	<span class="skill system backend level3">LDAP</span>
 	<span class="skill versioning level3">Git</span>
 	<span class="skill versioning level4">Svn</span>
-	<span class="skill database level4">MySQL</span>
-	<span class="skill database level3">Postgres</span>
-	<span class="skill architecture model level4">MVC</span>
-	<span class="skill systeme level4">Apache</span>
-
+	
+	<span class="skill language level4">SVG</span>
+</p>
 </form>	
 	<a name="experience"/>
 	<h2>Expérience</h2>
 
 <p >
-<h3>Développeur web - HESSO Genève</h3>
-Réalisation de mandats de développement d'application web, de façon autonome ou en équipe,
+<h3>Développeur web - <small><i>HESSO Genève 2015-2018</i></small></h3>
+
+-Réalisation de mandats de développement d'application web, de façon autonome ou en équipe,
 nécessitant la maitrise des technologies suivantes : PHP7, MySQL, Angular 5, .NetCore,
 HTML5, CSS3, JavaScript, UML, Apache, Nginx, MS-SQL.<br/>
-Développement, maintenance, évolution et support sur un ensemble de 8 sites Drupal.<br/>
-Participation au développement et à l'intégration graphique des applications et du site internet
+-Développement, maintenance, évolution et support sur un ensemble de 8 sites Drupal.<br/>
+-Participation au développement et à l'intégration graphique des applications et du site internet
 nécessaire à la publication des résultats des élections et des votations du canton de Genève
 sur le site officiel www.ge.ch.<br/>
-Participation en tant que juré professionnel du service Internet aux opérations de dépouillement
+-Participation en tant que juré professionnel du service Internet aux opérations de dépouillement
 centralisé du canton de Genève.<br/>
-Participation à la récolte et à l'analyse des besoins clients.<br/>
-Support technique au client du Laboratoire des Technologies de l'Information.<br/>
+-Participation à la récolte et à l'analyse des besoins clients.<br/>
+-Support technique au client du Laboratoire des Technologies de l'Information.<br/>
 </p>	
 	
 <p>
-<h3>Développeur spécialiste Drupal - Swissquote Bank</h3>
-Drupal developpeur
--Support et maintenance des sites web forex
--analyse des besoins
--Développement du site web principal
--infrastructure technique du site web principal
--scrum implementation
+<h3>Développeur spécialiste Drupal - <small><i>Swissquote Bank 2014-2015</i></small></h3>
+Drupal developpeur<br/>
+-Support et maintenance des sites web forex<br/>
+-Analyse des besoins<br/>
+-Développement du site web principal<br/>
+-Infrastructure technique du site web principal<br/>
+-Implémentation de la méthode SCRUM<br/>
 </p>	
 	
 <p>
+<h3>Lead technique - <small><i>Blue Infinity 2007-2014</i></small></h3>
+Lead consultant<br/>
+-Analyste Programmeur Senior & Analyste Business <br/>
+-Analyse, Lead Technique et développement web<br/>
+-Utilisation, support et development sur les principaux CMS<br/>
+-Développement d'un e-catalogue, Drupal 7<br/>
+-Campagnes de mailing de 2008 à 2011<br/>
+-Support au quotidien d'applications web développée en PHP<br/>
+</p>	
+	
+<!--p>
 <h3>Lead technique - Blue Infinity</h3>
-Lead consultant
-Senior Analyst Programmer & Business Analyst
-Analysis, TEchnical Lead and Web oriented development
-CMS usage, support and development
-e-catalogue, Drupal 7
-about 20 mailing campaigns from 2008 to 2011 
-daily support on several custom php applications
-</p>	
-	
+Lead consultant<br/>
+Senior Analyst Programmer & Business Analyst<br/>
+Analysis, TEchnical Lead and Web oriented development<br/>
+CMS usage, support and development<br/>
+e-catalogue, Drupal 7<br/>
+about 20 mailing campaigns from 2008 to 2011 <br/>
+daily support on several custom php applications<br/>
+</p-->	
+
 <p>
-<h3>Développeur - SIAE </h3>
+<h3>Développeur - <small><i>SIAE 2002-2007</i></small></h3>
+<p >
+Développement, maintenance et support de l'intranet des SAFER <br/>
+Développement de l'outil métier Technis. Technology 4D<br/>
+Support utilisateur.<br/>
 </p>	
-	
-<p>
-<h3>Développeur web - HESSO Genève</h3>
-</p>	
+	<hr/>
+	<p> <small>
+	Ce CV est développé selon une méthodologie agile, n'hésitez pas à revenir plus tard car il sera complété.
+	</small>
+	</p>
 	
 	
 	<a name="portfolio"/>
-	<h2>Portfolio</h2>	
+	<!--h2>Portfolio</h2>	
   <a href="www.wilhemlatchoumia.com" target="_blank"></a>
   <a href="www.wilhemlatchoumia.com" target="_blank"></a>
   <a href="www.wilhemlatchoumia.com" target="_blank"></a>
   <a href="www.wilhemlatchoumia.com" target="_blank"></a>
   <a href="www.wilhemlatchoumia.com" target="_blank"></a>
+  <!-- -->
 </body>
 </html>

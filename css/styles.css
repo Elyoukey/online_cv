@@ -8,32 +8,101 @@
 body{
 	margin: 0;
 	padding: 0;
-	padding-left: 260px;
+	padding-left: 360px;
 }
 
-span{
-display:block;
+h1{
+	color: rgba(10,100,100);
+	text-align: center;
+	font-size: 3em;
+	padding: 10px;
 }
-ul.menu{
+
+h1.notscrolled{
+	transition: font-size 500ms;
+}
+h1.scrolled{ 
+	transition: font-size 500ms;
+	position: fixed;
+	top:0;
+	font-size: 1.5em; 
+	text-align: right;
+	padding-right: 400px;
+	background: #fff;
+	width: 100%;
+}
+
+p{
+	max-width: 1000px;
+}
+.left-menu{
 	position: fixed;
 	top:0;
 	left:0;
 	height: 100%;
-	width: 200px;
-	padding: 60px 15px;
-	background: ivory;
-list-style: none;
-
+	width: 300px;
+	padding: 285px 15px;
+	background: url(../images/bg0.png);
+	background-position: -110px -10px;
+	background-repeat: no-repeat;
+	list-style: none;
+	text-align: center;
+	}
+	.left-menu a{
+		display: inline-block;
+		padding-left: 5px;
+		color: silver;
 	}
 	
 	ul.menu li{
 	list-style: none;
-	margin: 3px;
+	margin: 0;
+	padding: 0;
+	
 	}
 	
 	ul.menu li a{
 	text-decoration: none;
-	color: blue;
+	color: rgba(10,100,100);
 	font-weight: bold;
+	background-color: rgba(250, 250, 255, 0.7);
+	display: block;
+	padding: 7px 7px 7px 20px;
+	margin: 0;
 	}
 	
+	ul.menu li a:hover{
+	background-color: rgba(250, 250, 255, 1);
+	}
+	ul.menu li:first-child{
+		border-radius: 3px 3px;
+	}
+	
+	
+/* Skills styles */
+#skill-list{
+	text-align: center;
+}
+.skill{ 
+	display: inline-block;
+	border: none;
+	padding: 5px 15px 5px 15px;
+	margin: 8px 7px;
+	border-radius: 3px;
+	font-weight: bold;
+	color: white;
+}
+.skill.level1{}
+.skill.level2{}
+.skill.level3{}
+.skill.level4{}
+.skill.level5{}
+
+.skill.cms{ background-color: rgba(100,90,160)}
+.skill.language{ background-color: rgba(10,126,153) }
+.skill.system { background-color: rgba(200,100,100) }
+.skill.framework { background-color: rgba(145,90,160) }
+.skill.versioning {  background-color: rgba(135,200,105) }
+.skill.database { background-color: rgba(95,200,120) }
+.skill.methodology { background-color: rgba( 200,150,105) }
+.skill.api{  background-color: rgba(160,46,116) }
