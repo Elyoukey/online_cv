@@ -1,0 +1,27 @@
+@media print {
+    body{
+        margin: 5px;
+        padding: 0;
+    }
+    #skill-list{
+        margin:0;
+        padding: 0;
+    }
+    .skill{
+        display: inline-block;
+        border: none;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 3px;
+        font-weight: bold;
+        color: white;
+    }
+
+    #hamburger-menu{
+        display: none;
+    }
+    #left-menu{
+        display: none;
+    }
+
+}

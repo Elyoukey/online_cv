@@ -171,11 +171,11 @@ small{
 	font-weight: bold;
 	color: white;
 }
-.skill.level1{}
-.skill.level2{}
+.skill.level1{ font-size: smaller; font-weight: lighter}
+.skill.level2{ font-size: small; font-weight: normal}
 .skill.level3{}
-.skill.level4{}
-.skill.level5{}
+.skill.level4{ font-size: large}
+.skill.level5{ font-size: larger}
 
 .skill.cms{ background-color: rgba(100,90,160,1)}
 .skill.language{ background-color: rgba(10,126,153,1) }
