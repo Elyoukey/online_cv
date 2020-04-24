@@ -2,21 +2,55 @@
 	font-family: arial;
 	margin:0;
 	padding: 0;
-	
+	box-sizing: border-box;
 
 }
 body{
 	margin: 0;
 	padding: 0;
 	padding-left: 360px;
+	font-weight: 400;
+	line-height: 1.5;
 }
 
 h1{
-	color: rgba(10,100,100);
+	color: rgba(10,100,100,1);
 	text-align: center;
-	font-size: 3em;
-	padding: 10px;
 }
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
 
 h1.notscrolled{
 	transition: font-size 500ms;
@@ -32,23 +66,70 @@ h1.scrolled{
 	width: 100%;
 }
 
+h2{
+	margin-top: 50px;
+}
+
+.moto{
+	text-align: center;
+}
+
 p{
 	max-width: 1000px;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
-.left-menu{
+ul{
+	margin: 0 0 1rem 0;
+}
+
+a{
+	text-decoration: none;
+	color: rgba(10,100,100,1);
+}
+
+small{
+	font-size: 80%;
+	
+}
+#lang-menu{
+	float: right;
+	margin: 0px;
+	text-align:center;
+}
+
+#lang-menu a{
+	font-weight: bold;
+	background: rgba(10,100,100,1);
+	color: #fff;
+	display: block;
+	padding: 4px 6px;
+	margin: 0;
+	border-radius: 7px 0 0 7px;
+	border: 1px solid #fff;
+}
+#lang-menu a:hover{
+	transform: scale(1.3)
+}
+
+#hamburger-menu{
+	display: none;
+}
+#left-menu{
 	position: fixed;
 	top:0;
 	left:0;
 	height: 100%;
 	width: 300px;
 	padding: 285px 15px;
+	
 	background: url(../images/bg0.png);
 	background-position: -110px -10px;
 	background-repeat: no-repeat;
 	list-style: none;
 	text-align: center;
 	}
-	.left-menu a{
+	#left-menu a{
 		display: inline-block;
 		padding-left: 5px;
 		color: silver;
@@ -61,21 +142,19 @@ p{
 	
 	}
 	
-	ul.menu li a{
-	text-decoration: none;
-	color: rgba(10,100,100);
-	font-weight: bold;
-	background-color: rgba(250, 250, 255, 0.7);
-	display: block;
-	padding: 7px 7px 7px 20px;
-	margin: 0;
+	#left-menu ul.menu li a{
+		text-align: left;
+		text-decoration: none;
+		color: rgba(10,100,100);
+		font-weight: bold;
+		background-color: rgba(250, 250, 255, 0.7);
+		display: block;
+		padding: 7px 7px 7px 20px;
+		margin: 0;
 	}
 	
-	ul.menu li a:hover{
+	#left-menu ul.menu li a:hover{
 	background-color: rgba(250, 250, 255, 1);
-	}
-	ul.menu li:first-child{
-		border-radius: 3px 3px;
 	}
 	
 	
@@ -98,11 +177,94 @@ p{
 .skill.level4{}
 .skill.level5{}
 
-.skill.cms{ background-color: rgba(100,90,160)}
-.skill.language{ background-color: rgba(10,126,153) }
-.skill.system { background-color: rgba(200,100,100) }
-.skill.framework { background-color: rgba(145,90,160) }
-.skill.versioning {  background-color: rgba(135,200,105) }
-.skill.database { background-color: rgba(95,200,120) }
-.skill.methodology { background-color: rgba( 200,150,105) }
-.skill.api{  background-color: rgba(160,46,116) }
+.skill.cms{ background-color: rgba(100,90,160,1)}
+.skill.language{ background-color: rgba(10,126,153,1) }
+.skill.system { background-color: rgba(200,100,100,1) }
+.skill.framework { background-color: rgba(145,90,160,1) }
+.skill.versioning {  background-color: rgba(135,200,105,1) }
+.skill.database { background-color: rgba(95,200,120,1) }
+.skill.methodology { background-color: rgba( 200,150,105,1) }
+.skill.api{  background-color: rgba(160,46,116,1) }
+
+
+@media only screen and (max-width: 800px) {
+    body {
+        padding-left: 10px;
+    }
+	
+
+	#left-menu{
+		position: static;
+		
+		top: 5px;
+		left: 5px;
+		width: 100%;
+		padding: 0 15px;
+		background: url(../images/bg1.png);
+		background-position: -45px 25px;
+		background-repeat: no-repeat;
+		list-style: none;
+		text-align: center;
+		background-color: #ffffff;
+	}
+	#left-menu.scrolledshown{
+		position: fixed;
+		left:0;
+		top: 25px;
+		width: 100%;
+		padding-top: 30px;
+		background-position: -20px 0px;
+		
+		background: #5a5a5a;
+	}
+	#left-menu ul.menu li{
+		display: inline-block;
+		margin: 3px;
+		padding: 0 0 0 0;
+	}
+	#left-menu.scrolledshown ul.menu li{
+		display: block;
+	}
+	
+	#hamburger-menu.scrolled{
+		display: inline-block;
+		position: fixed;
+		width: 30px;
+		height: 30px;
+		border: none;
+		background: none;
+		top: 0;
+		left: 15px;
+	}
+	
+
+	
+	#hamburger-menu span{
+		display: block;
+		width: 25px;
+		height: 3px;
+		margin-bottom: 4px;
+		background: rgba(10,100,100);
+		border-radius: 3px;
+		transition: transform 200ms;
+	}
+	#hamburger-menu.close span{
+		display: none;
+	}
+	#hamburger-menu.close span:first-child{
+		transform: rotate(-45deg) translate(0,5px);
+		transition: transform 200ms;
+		display: block;
+	}
+	#hamburger-menu.close span:last-child{
+		display: block;
+		transition: transform 200ms;
+		transform: rotate(45deg)  translate(0,-5px);
+	}
+
+	
+	h1.scrolled{ 
+		padding-right: 20px;
+	}
+
+}
