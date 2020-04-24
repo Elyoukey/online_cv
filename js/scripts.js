@@ -8,6 +8,10 @@ window.onload = function(){
 	for( var i=0; i<elts.length;i++){
 		if(elts[i].lang !== lang ) elts[i].style.display='none';
 	}
+
+	document.title = 'Lucas LEBIELLE ('+lang+')';
+
+
 	
 	/*Scroll effect*/
 	window.addEventListener('scroll', function(e){

@@ -68,6 +68,13 @@ h1.scrolled{
 
 h2{
 	margin-top: 50px;
+	color: rgba(10,100,100,1);
+	border-bottom: 1px solid rgba(10,100,100,1);
+	max-width: 1000px;
+}
+
+hr{
+	max-width: 1000px;
 }
 
 .moto{
