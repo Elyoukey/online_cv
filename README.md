@@ -1,2 +1,2 @@
 # online_cv
-Singe page application presenting my skills. 
+Single page application presenting my skills. 
